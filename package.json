@@ -1,0 +1,33 @@
+{
+    "name": "NickPolitical",
+    "version": "1.0.0",
+    "description": "This is a Demo Page",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "Nicholas Giusti",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "devDependencies": {
+        "@babel/core": "^7.0.0-beta.40",
+        "@babel/preset-env": "^7.0.0-beta.40",
+        "babel-core": "^6.26.0",
+        "browser-sync": "^2.23.6",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.1.0",
+        "gulp-babel": "^8.0.0-beta.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-sass": "^3.1.0",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-uglify": "^3.0.0"
+    },
+    "dependencies": {}
+}

@@ -1,0 +1,238 @@
+@import "variables";
+@import "media-queries";
+@import "reset";
+
+// font-family: 'Varela Round', sans-serif;
+// font-family: 'Rajdhani', sans-serif;
+// font-family: 'Lato', sans-serif;
+
+section {
+    padding: 5vw;
+}
+
+.header__wrap {
+    position: relative;
+    background: #C69781;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    height: 40vw;
+    &::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.6;
+        background-image: url("../img/lockers.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    &::after{
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(70deg ,rgba(217, 185, 171, 0.6)  50%, transparent 50%);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
+
+.header__content-wrap {
+    z-index: 2;
+    opacity: 1;
+    position: relative;
+}
+
+.header__title {
+    font-size: 6vw;
+    text-align: center;
+    color: white;
+    padding: 10vw 5vw;
+    width:50%;
+}
+
+.header__title-name{
+    font-size: 8vw;
+    font-weight: bold;
+}
+
+.header__image-wrap {
+    width: 25%;
+    background-color: #DCC0B3;
+    z-index: 1;
+}
+
+.header__image {
+    width: 100%;
+    margin: 3vw 0vw -2vw -2vw;
+}
+
+.header__sub-title {
+
+}
+
+#biography {
+    background: linear-gradient(70deg ,transparent  50%, #EFF5F8 50%);
+    position: relative;
+}
+
+#issues {
+    background: linear-gradient(290deg ,transparent  50%, #ecdcd5 50%);
+}
+
+#support {
+    background: linear-gradient(70deg ,transparent  50%, #EFF5F8 50%);
+
+}
+
+.section__header {
+    font-size: 5vw;
+    font-family: 'Varela Round', sans-serif;
+    padding: 5vw 0;
+    color: #1a1a1a;
+}
+
+.section__copy {
+    font-size: 2vw;
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 125%;
+    color: #313131;
+}
+
+.biography__content{
+    display:flex;
+    justify-content: space-around;
+}
+
+.biography__copy{
+    width: 70%;
+    padding:5%;
+}
+
+.issues-cards__warp {
+    display: flex;
+    justify-content: space-around;
+    margin: 5vw 0;
+    
+}
+
+.issues-item__warp {
+    width: 33vw;
+    padding: 2vw;
+    margin: 1vw;
+    box-shadow: 0vw 1vw 2vw 0vw black;
+    background-color: white;
+}
+
+.issues-item__image {
+    width:100%;
+    height: 16vw;
+}
+
+.issues__header{
+    font-size: 2.5vw;
+    padding: 2vw 0;
+}
+
+
+.footer__warp {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(100deg ,#EFF5F8  50%, #ecdcd5 50%);
+    display: flex;
+    justify-content: space-around;
+    padding:4vw 0;
+}
+
+.footer__social-links{
+    display:flex;
+    justify-content: space-around;
+    width: 25%;
+    font-size: 4vw;
+    color:#DCC0B3;
+}
+
+.footer__link{
+    transition: all 0.5s; 
+    text-decoration: none;
+    &:hover{
+        color:#978177;
+        transform: scale(1.2);
+    }
+}
+
+.footer__cta{
+    display: flex;
+    align-items: center;
+}
+
+.footer__signature{
+    font-size: 2vw;
+    color: #978177;
+    transition: all 0.5s;
+    text-decoration: none;
+    &:hover{
+        color: white;
+    }
+}
+
+.button__donate{
+    color: #ecdcd5;
+    background: #978177;
+    border: 5px solid #ecdcd5;
+    padding: 2vw;
+    font-size: 4vw;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5%;
+    margin: 3vw auto;
+    display: block;
+    width: 35%;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s;
+    &:hover{
+        color: #978177;
+        background: #ecdcd5;
+        border: 5px solid #978177;
+    }
+}
+
+/************************************************************
+ ** 960px - Ideal for most browser screens, iPad Landscape **
+ ** Inherits all the things.                               **
+ ** Has touch support.                                     **
+ ************************************************************/
+
+@media #{$mq-large} {
+
+}
+
+
+/**********************************************
+ ** 1200px - Ideal for wider browser screens **
+ ** Inherits all the things.                 **
+ ** Has touch support.                       **
+ **********************************************/
+
+@media #{$mq-largest} {
+
+}
